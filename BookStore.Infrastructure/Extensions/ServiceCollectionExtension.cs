@@ -1,4 +1,7 @@
-﻿using BookStore.Infrastructure.Persistance;
+﻿using BookStore.Domain.Repositories;
+using BookStore.Infrastructure.Persistance;
+using BookStore.Infrastructure.Repositories;
+using BookStore.Infrastructure.Seeders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +19,9 @@ namespace BookStore.Infrastructure.Extensions
         {
             var connectionString = configuration.GetConnectionString("BookStoreDb");
             services.AddDbContext<BookStoreDbContext>(options => options.UseSqlServer(connectionString));
+        
+            services.AddScoped<IBookSeeder, BookSeeder>();
+            services.AddScoped<IBookRepository, BookRepository>();
         }
     }
 }

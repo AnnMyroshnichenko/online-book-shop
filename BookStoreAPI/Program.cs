@@ -1,5 +1,7 @@
 using BookStore.Infrastructure.Persistance;
 using BookStore.Infrastructure.Extensions;
+using BookStore.Infrastructure.Seeders;
+using BookStore.Application.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,10 +12,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
+
+var scope = app.Services.CreateScope();
+var seeder = scope.ServiceProvider.GetRequiredService<IBookSeeder>();
+await seeder.Seed();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
