@@ -18,5 +18,19 @@ namespace BookStore.Infrastructure.Repositories
             var books = await dbContext.Books.ToListAsync();
             return books;
         }
+
+        public async Task<Book?> GetByIdAsync(int id)
+        {
+           var book = await dbContext.Books.FirstOrDefaultAsync(x => x.Id == id);
+           return book;
+        }
+
+        public async Task<int> Create(Book book)
+        {
+            dbContext.Books.Add(book);
+            await dbContext.SaveChangesAsync();
+            return book.Id;
+        }
+
     }
 }

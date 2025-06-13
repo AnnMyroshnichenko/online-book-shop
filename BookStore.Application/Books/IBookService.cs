@@ -10,5 +10,7 @@ namespace BookStore.Application.Books
     public interface IBookService
     {
         Task<IEnumerable<Book>> GetAllBooks();
+        Task<Book> GetById(int id);
+        Task<int> Create(Book book);
     }
 }

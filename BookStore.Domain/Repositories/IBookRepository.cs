@@ -10,5 +10,7 @@ namespace BookStore.Domain.Repositories
     public interface IBookRepository
     {
         Task<IEnumerable<Book>> GetAllAsync();
+        Task<Book?> GetByIdAsync(int id);
+        Task<int> Create(Book book);
     }
 }

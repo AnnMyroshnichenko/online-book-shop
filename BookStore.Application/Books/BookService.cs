@@ -12,11 +12,26 @@ namespace BookStore.Application.Books
     internal class BookService(IBookRepository bookRepository,
         ILogger<BookService> logger) : IBookService
     {
+        public async Task<int> Create(Book book)
+        {
+            logger.LogInformation("Creating a new book");
+            int id = await bookRepository.Create(book);
+            return id;   
+        }
+
         public async Task<IEnumerable<Book>> GetAllBooks()
         {
-            logger.LogInformation("Getting all restaurants");
+            logger.LogInformation("Getting all books");
             var books = await bookRepository.GetAllAsync();
             return books;
+        }
+
+        public async Task<Book?> GetById(int id)
+        {
+            logger.LogInformation($"Getting books {id}");
+            var book = await bookRepository.GetByIdAsync(id);
+
+            return book;
         }
     }
 }
