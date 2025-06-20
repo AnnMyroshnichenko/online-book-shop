@@ -18,7 +18,7 @@ namespace BookStore.Infrastructure.Persistance
         public DbSet<Rental> Rentals => Set<Rental>();
         public DbSet<Payment> Payments => Set<Payment>();
         public DbSet<Review> Reviews => Set<Review>();
-        public DbSet<Wishlist> Wishlists => Set<Wishlist>();
+        public DbSet<Cart> Wishlists => Set<Cart>();
 
         public BookStoreDbContext(DbContextOptions<BookStoreDbContext> options) : base(options) 
         {
@@ -31,7 +31,7 @@ namespace BookStore.Infrastructure.Persistance
                 .HasMany(b => b.Categories)
                 .WithMany(c => c.Books);
 
-            modelBuilder.Entity<Wishlist>()
+            modelBuilder.Entity<Cart>()
                 .HasKey(w => new { w.UserId, w.BookId });
 
             base.OnModelCreating(modelBuilder);

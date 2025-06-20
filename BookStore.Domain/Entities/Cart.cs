@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Domain.Entities
 {
-    public class Wishlist
+    public class Cart
     {
         public int Id { get; set; }
         public int UserId { get; set; }
