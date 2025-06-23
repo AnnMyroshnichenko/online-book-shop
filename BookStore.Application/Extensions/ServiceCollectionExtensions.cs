@@ -10,11 +10,14 @@ using System.Threading.Tasks;
 
 namespace BookStore.Application.Extensions
 {
-    public static class ServiceCollectionExtension
+    public static class ServiceCollectionExtensions
     {
         public static void AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<IBookService, BookService>();
+            var applicationAssembly = typeof(ServiceCollectionExtensions).Assembly;
+
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(applicationAssembly));
+            services.AddAutoMapper(applicationAssembly);
         }
     }
 }

@@ -35,8 +35,7 @@ namespace BookStore.Infrastructure.Seeders
                     Description = "A fantasy novel and prelude to The Lord of the Rings.",
                     Publisher = "Houghton Mifflin Harcourt",
                     PublishedDate = new DateTime(1937, 9, 21),
-                    IsAvailableForSale = true,
-                    IsAvailableForRent = true
+                    IsAvailableForSale = true
                 },
                 new Book
                 {
@@ -46,8 +45,7 @@ namespace BookStore.Infrastructure.Seeders
                     Description = "A novel about racial injustice in the Deep South.",
                     Publisher = "J.B. Lippincott & Co.",
                     PublishedDate = new DateTime(1960, 7, 11),
-                    IsAvailableForSale = true,
-                    IsAvailableForRent = false
+                    IsAvailableForSale = true
                 },
                 new Book
                 {
@@ -57,8 +55,7 @@ namespace BookStore.Infrastructure.Seeders
                     Description = "A dystopian novel about surveillance and totalitarianism.",
                     Publisher = "Secker & Warburg",
                     PublishedDate = new DateTime(1949, 6, 8),
-                    IsAvailableForSale = true,
-                    IsAvailableForRent = true
+                    IsAvailableForSale = true
                 }
             };
         }

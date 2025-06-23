@@ -150,3 +150,7 @@ C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\zh-Hans\Micros
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\BookStore.Infrastructure.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\BookStore.Infrastructure.pdb
+C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\obj\Debug\net8.0\BookStoreAPI.sourcelink.json
+C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\MediatR.dll
+C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\MediatR.Contracts.dll

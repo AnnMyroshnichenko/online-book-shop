@@ -32,5 +32,13 @@ namespace BookStore.Infrastructure.Repositories
             return book.Id;
         }
 
+        public async Task Delete(Book book)
+        {
+            dbContext.Remove(book);
+            await dbContext.SaveChangesAsync();
+        }
+
+        public Task SaveChanges() 
+            => dbContext.SaveChangesAsync();
     }
 }

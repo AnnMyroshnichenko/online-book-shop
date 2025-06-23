@@ -10,3 +10,4 @@ C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Domain\obj\Debug\net8.0\BookStore.
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Domain\obj\Debug\net8.0\refint\BookStore.Domain.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Domain\obj\Debug\net8.0\BookStore.Domain.pdb
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Domain\obj\Debug\net8.0\ref\BookStore.Domain.dll
+C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Domain\obj\Debug\net8.0\BookStore.Domain.sourcelink.json

@@ -12,5 +12,7 @@ namespace BookStore.Domain.Repositories
         Task<IEnumerable<Book>> GetAllAsync();
         Task<Book?> GetByIdAsync(int id);
         Task<int> Create(Book book);
+        Task Delete(Book book);
+        Task SaveChanges();
     }
 }

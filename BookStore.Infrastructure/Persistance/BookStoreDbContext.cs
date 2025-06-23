@@ -15,10 +15,9 @@ namespace BookStore.Infrastructure.Persistance
         public DbSet<Category> Categories => Set<Category>();
         public DbSet<Order> Orders => Set<Order>();
         public DbSet<OrderItem> OrderItems => Set<OrderItem>();
-        public DbSet<Rental> Rentals => Set<Rental>();
         public DbSet<Payment> Payments => Set<Payment>();
         public DbSet<Review> Reviews => Set<Review>();
-        public DbSet<Cart> Wishlists => Set<Cart>();
+        public DbSet<Cart> Carts => Set<Cart>();
 
         public BookStoreDbContext(DbContextOptions<BookStoreDbContext> options) : base(options) 
         {
