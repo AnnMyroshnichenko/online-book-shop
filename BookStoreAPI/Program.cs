@@ -2,6 +2,8 @@ using BookStore.Infrastructure.Persistance;
 using BookStore.Infrastructure.Extensions;
 using BookStore.Infrastructure.Seeders;
 using BookStore.Application.Extensions;
+using Serilog;
+using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Host.UseSerilog((context, configuration) =>
+    configuration
+        .ReadFrom.Configuration(context.Configuration));
 
 var app = builder.Build();
 
