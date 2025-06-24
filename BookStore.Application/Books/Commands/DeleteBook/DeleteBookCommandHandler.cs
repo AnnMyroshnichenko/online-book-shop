@@ -1,4 +1,6 @@
-﻿using BookStore.Domain.Repositories;
+﻿using BookStore.Domain.Entities;
+using BookStore.Domain.Exceptions;
+using BookStore.Domain.Repositories;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,19 +13,18 @@ namespace BookStore.Application.Books.Commands.DeleteBook
 {
     public class DeleteBookCommandHandler (ILogger<DeleteBookCommandHandler> logger,
         IBookRepository bookRepository)
-        : IRequestHandler<DeleteBookCommand, bool>
+        : IRequestHandler<DeleteBookCommand>
     {
-        public async Task<bool> Handle(DeleteBookCommand request, CancellationToken cancellationToken)
+        public async Task Handle(DeleteBookCommand request, CancellationToken cancellationToken)
         {
             logger.LogInformation($"Deleting book with id: {request.Id}");
             var book = await bookRepository.GetByIdAsync(request.Id);  
             if( book == null )
             {
-                return false;
+                throw new NotFoundException(nameof(Book), request.Id.ToString());
             }
 
             await bookRepository.Delete(book);
-            return true;
         }
     }
 }

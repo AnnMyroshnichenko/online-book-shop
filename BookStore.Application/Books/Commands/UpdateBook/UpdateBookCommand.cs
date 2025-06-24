@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Application.Books.Commands.UpdateBook
 {
-    public class UpdateBookCommand : IRequest<bool>
+    public class UpdateBookCommand : IRequest
     {
         public int Id { get; set; }
         public string Title { get; set; } = default!;

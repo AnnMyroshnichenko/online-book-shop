@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Application.Books.Commands.DeleteBook
 {
-    public class DeleteBookCommand(int id) : IRequest<bool>
+    public class DeleteBookCommand(int id) : IRequest
     {
         public int Id { get;} = id;
     }

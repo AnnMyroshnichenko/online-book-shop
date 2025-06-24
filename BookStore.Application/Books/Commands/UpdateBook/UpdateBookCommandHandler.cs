@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using BookStore.Domain.Entities;
+using BookStore.Domain.Exceptions;
 using BookStore.Domain.Repositories;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -12,21 +14,20 @@ namespace BookStore.Application.Books.Commands.UpdateBook
 {
     internal class UpdateBookCommandHandler (ILogger<UpdateBookCommandHandler> logger,
         IBookRepository bookRepository, IMapper mapper)
-        : IRequestHandler<UpdateBookCommand, bool>
+        : IRequestHandler<UpdateBookCommand>
     {
-        public async Task<bool> Handle(UpdateBookCommand request, CancellationToken cancellationToken)
+        public async Task Handle(UpdateBookCommand request, CancellationToken cancellationToken)
         {
             logger.LogInformation($"Updating book with id: {request.Id}");
             var book = await bookRepository.GetByIdAsync(request.Id);
             if (book == null)
             {
-                return false;
+                throw new NotFoundException(nameof(Book), request.Id.ToString());
             } 
             
             mapper.Map(request, book);
 
             await bookRepository.SaveChanges();
-            return true;
         }
     }
 }

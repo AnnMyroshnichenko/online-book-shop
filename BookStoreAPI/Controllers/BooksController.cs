@@ -45,28 +45,16 @@ namespace BookStoreAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBook([FromRoute] int id)
         {
-            var isDeleted = await mediator.Send(new DeleteBookCommand(id));
-
-            if (isDeleted)
-            {
-                return NoContent();
-            }
-
-            return NotFound();
+            await mediator.Send(new DeleteBookCommand(id));
+            return NoContent();
         }
 
         [HttpPatch("{id}")]
         public async Task<IActionResult> UpdateBook([FromRoute] int id, UpdateBookCommand command)
         {
             command.Id = id;
-            var isUpdated = await mediator.Send(command);
-
-            if (isUpdated)
-            {
-                return NoContent();
-            }
-
-            return NotFound();
+            await mediator.Send(command);
+            return NoContent();
         }
     }
 }
