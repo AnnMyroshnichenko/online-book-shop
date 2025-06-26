@@ -1,3 +1,9 @@
+C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.AssemblyInfo.cs
+C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.sourcelink.json
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\bin\Debug\net8.0\BookStore.Infrastructure.deps.json
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\bin\Debug\net8.0\BookStore.Infrastructure.runtimeconfig.json
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\bin\Debug\net8.0\BookStore.Infrastructure.dll
@@ -6,15 +12,9 @@ C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\bin\Debug\net8.0\Bo
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\bin\Debug\net8.0\BookStore.Domain.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\bin\Debug\net8.0\BookStore.Application.pdb
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\bin\Debug\net8.0\BookStore.Domain.pdb
-C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.AssemblyInfo.cs
-C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStor.0723F12B.Up2Date
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\refint\BookStore.Infrastructure.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.pdb
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.genruntimeconfig.cache
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\ref\BookStore.Infrastructure.dll
-C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Infrastructure\obj\Debug\net8.0\BookStore.Infrastructure.sourcelink.json

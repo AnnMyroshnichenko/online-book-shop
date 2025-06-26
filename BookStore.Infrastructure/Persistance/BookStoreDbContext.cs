@@ -1,4 +1,5 @@
 ﻿using BookStore.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Infrastructure.Persistance
 {
-    internal class BookStoreDbContext : DbContext
+    internal class BookStoreDbContext : IdentityDbContext<User>
     {
         public DbSet<User> Users => Set<User>();
         public DbSet<Book> Books => Set<Book>();

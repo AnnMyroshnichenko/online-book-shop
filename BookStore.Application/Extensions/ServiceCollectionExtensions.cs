@@ -1,4 +1,5 @@
 ﻿using BookStore.Application.Books;
+using BookStore.Application.Users;
 using BookStore.Domain.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +19,9 @@ namespace BookStore.Application.Extensions
 
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(applicationAssembly));
             services.AddAutoMapper(applicationAssembly);
+
+            services.AddScoped<IUserContext, UserContext>();
+            services.AddHttpContextAccessor();
         }
     }
 }

@@ -8,9 +8,9 @@ C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookS
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookStore.Application.AssemblyInfoInputs.cache
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookStore.Application.AssemblyInfo.cs
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookStore.Application.sourcelink.json
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookStor.D70AE061.Up2Date
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookStore.Application.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\refint\BookStore.Application.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookStore.Application.pdb
 C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\ref\BookStore.Application.dll
-C:\Users\Admin\Desktop\BookStoreAPI\BookStore.Application\obj\Debug\net8.0\BookStore.Application.sourcelink.json
