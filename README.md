@@ -1,7 +1,8 @@
 # Online Book Shop
-The Online Book Shop API is a robust, scalable RESTful web application built with ASP.NET Core. It is designed to manage a bookstore’s inventory and operations. 
+The Online Book Shop API is a robust, scalable RESTful API built with ASP.NET Core. It is designed to manage a bookstore’s inventory and operations. 
 It provides functionality for creating, updating, retrieving, and deleting books, with support for categorizing books into multiple genres. The project adheres to 
-Clean Architecture principles and implements the Command Query Responsibility Segregation (CQRS) pattern using MediatR.
+Clean Architecture principles and implements the Command Query Responsibility Segregation (CQRS) pattern using MediatR. The application implements role-based authorization 
+using ASP.NET Core Identity with roles like Admin and User to control access.
 
 ## Technologies & Tools
 - ASP.NET Core Web API
@@ -9,6 +10,7 @@ Clean Architecture principles and implements the Command Query Responsibility Se
 - Entity Framework Core
 - MediatR for CQRS pattern 
 - AutoMapper for mapping between DTOs/Entities
+- Serilog for logging
 
 ## Architecture Overview
 
@@ -17,14 +19,14 @@ Clean Architecture principles and implements the Command Query Responsibility Se
 The Online Book Shop API follows Clean Architecture principles. This approach organizes the codebase into concentric layers, ensuring that business logic is independent of frameworks, 
 databases, and UI. The layers are:
 
-- Domain Layer:
+- #### Domain Layer:
 
 Contains the core business entities (e.g., Book, Category) and interfaces for repositories (e.g., IBookRepository, ICategoryRepository).
 
 Defines the business rules and logic, independent of any external systems.
 
 
-- Application Layer:
+- #### Application Layer:
 
 Implements business use cases through commands (e.g., CreateBookCommand, UpdateBookCommand) and queries (e.g., GetBookByIdQuery).
 
@@ -35,12 +37,12 @@ Contains DTOs (e.g., CategoryDto) for data transfer between the API and applicat
 Uses AutoMapper to map between DTOs, commands, and domain entities.
 
 
-- Infrastructure Layer:
+- #### Infrastructure Layer:
 
 Implements repository interfaces and database access using Entity Framework Core.
 
 
-- API Layer:
+- #### API Layer:
 
 Exposes the application’s functionality through RESTful endpoints using ASP.NET Core controllers.
 
@@ -51,12 +53,11 @@ Receives HTTP requests, maps them to commands/queries, and returns responses.
 
 The project implements Command Query Responsibility Segregation (CQRS) using MediatR, separating read and write operations to optimize performance and maintainability.
 
-- Commands:
+- #### Commands:
 Represent actions that modify state (e.g., CreateBookCommand, UpdateBookCommand).
 Handled by command handlers (e.g., CreateBookCommandHandler, UpdateBookCommandHandler).
 
-- Queries:
-
+- #### Queries:
 Represent read operations that retrieve data without modifying state (e.g., GetBookByIdQuery, GetAllBooksQuery).
 Handled by query handlers that return DTOs.
 
@@ -79,7 +80,7 @@ dotnet build
 Apply EF migrations and seed initial data:
 
 ```
-dotnet ef database update --project Infrastructure
+dotnet ef database update --project BookStore.Infrastructure
 ```
 
 Run the API
@@ -87,15 +88,40 @@ Run the API
 
 ## API Endpoints
 
-GET /api/books – Retrieve all books
+#### Books
+GET /api/books
 
-GET /api/books/{id} – Get details of a specific book
+POST /api/books
 
-POST /api/books – Add a new book
+GET /api/books/{id}
 
-DELETE /api/books/{id} – Delete a book
+DELETE /api/books/{id}
 
-PATCH /api/books/{id} - Update book info
+PATCH /api/books/{id}
+
+
+#### Identity
+POST /api/identity/register
+
+POST /api/identity/login
+
+POST /api/identity/refresh
+
+GET /api/identity/confirmEmail
+
+POST /api/identity/resendConfirmationEmail
+
+POST /api/identity/forgotPassword
+
+POST /api/identity/resetPassword
+
+POST /api/identity/manage/2fa
+
+GET /api/identity/manage/info
+
+POST /api/identity/manage/info
+
+PATCH /api/identity/user
 
 
 ## Contributing
