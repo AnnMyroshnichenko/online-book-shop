@@ -133,7 +133,7 @@
     "/api/identity/register": {
       "post": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "requestBody": {
           "content": {
@@ -164,7 +164,7 @@
     "/api/identity/login": {
       "post": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "parameters": [
           {
@@ -208,7 +208,7 @@
     "/api/identity/refresh": {
       "post": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "requestBody": {
           "content": {
@@ -236,7 +236,7 @@
     "/api/identity/confirmEmail": {
       "get": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "operationId": "MapIdentityApi-api/identity/confirmEmail",
         "parameters": [
@@ -272,7 +272,7 @@
     "/api/identity/resendConfirmationEmail": {
       "post": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "requestBody": {
           "content": {
@@ -293,7 +293,7 @@
     "/api/identity/forgotPassword": {
       "post": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "requestBody": {
           "content": {
@@ -324,7 +324,7 @@
     "/api/identity/resetPassword": {
       "post": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "requestBody": {
           "content": {
@@ -355,7 +355,7 @@
     "/api/identity/manage/2fa": {
       "post": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "requestBody": {
           "content": {
@@ -396,7 +396,7 @@
     "/api/identity/manage/info": {
       "get": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "responses": {
           "200": {
@@ -426,7 +426,7 @@
       },
       "post": {
         "tags": [
-          "BookStoreAPI"
+          "Identity"
         ],
         "requestBody": {
           "content": {
@@ -460,6 +460,37 @@
           },
           "404": {
             "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/identity/user": {
+      "patch": {
+        "tags": [
+          "Identity"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDetailsCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDetailsCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDetailsCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -836,6 +867,32 @@
             "items": {
               "$ref": "#/components/schemas/CategoryDto"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateUserDetailsCommand": {
+        "type": "object",
+        "properties": {
+          "street": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "postalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
             "nullable": true
           }
         },

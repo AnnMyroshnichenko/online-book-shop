@@ -24,6 +24,7 @@ namespace BookStore.Infrastructure.Extensions
                 options.UseSqlServer(connectionString));
 
             services.AddIdentityApiEndpoints<User>()
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<BookStoreDbContext>();
 
             services.AddScoped<IBookSeeder, BookSeeder>();

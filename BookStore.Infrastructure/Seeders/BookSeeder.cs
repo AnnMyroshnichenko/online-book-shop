@@ -1,5 +1,7 @@
-﻿using BookStore.Domain.Entities;
+﻿using BookStore.Domain.Constants;
+using BookStore.Domain.Entities;
 using BookStore.Infrastructure.Persistance;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +22,24 @@ namespace BookStore.Infrastructure.Seeders
                     dbContext.Books.AddRange(books);
                     await dbContext.SaveChangesAsync();
                 }
+
+                if(!dbContext.Roles.Any())
+                {
+                    var roles = GetRoles();
+                    dbContext.Roles.AddRange(roles);
+                    await dbContext.SaveChangesAsync();
+                }
             }
+        }
+
+        private IEnumerable<IdentityRole> GetRoles()
+        {
+            List<IdentityRole> roles =
+                [
+                    new (UserRoles.User),
+                    new (UserRoles.Admin)
+                ];
+            return roles;
         }
 
         private IEnumerable<Book> GetBooks()

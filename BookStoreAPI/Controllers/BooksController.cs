@@ -4,6 +4,7 @@ using BookStore.Application.Books.Commands.DeleteBook;
 using BookStore.Application.Books.Commands.UpdateBook;
 using BookStore.Application.Books.Querries.GetBookById;
 using BookStore.Application.Books.Querries.GetRestaurants;
+using BookStore.Domain.Constants;
 using BookStore.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -36,7 +37,7 @@ namespace BookStoreAPI.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = UserRoles.Admin)]
         public  async Task<IActionResult> CreateBook(CreateBookCommand command)
         {
             int id = await mediator.Send(command);
@@ -45,7 +46,7 @@ namespace BookStoreAPI.Controllers
 
 
         [HttpDelete("{id}")]
-        [Authorize]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> DeleteBook([FromRoute] int id)
         {
             await mediator.Send(new DeleteBookCommand(id));
@@ -53,7 +54,7 @@ namespace BookStoreAPI.Controllers
         }
 
         [HttpPatch("{id}")]
-        [Authorize]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> UpdateBook([FromRoute] int id, UpdateBookCommand command)
         {
             command.Id = id;

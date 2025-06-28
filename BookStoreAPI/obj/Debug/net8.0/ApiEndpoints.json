@@ -109,6 +109,9 @@
         "StatusCode": 200
       }
     ],
+    "Tags": [
+      "Identity"
+    ],
     "EndpointName": "MapIdentityApi-api/identity/confirmEmail"
   },
   {
@@ -138,6 +141,9 @@
         ],
         "StatusCode": 400
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
@@ -172,6 +178,9 @@
         ],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
@@ -208,6 +217,9 @@
         "MediaTypes": [],
         "StatusCode": 404
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
@@ -238,6 +250,9 @@
         "MediaTypes": [],
         "StatusCode": 404
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
@@ -274,6 +289,9 @@
         "MediaTypes": [],
         "StatusCode": 404
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
@@ -298,6 +316,9 @@
         ],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
@@ -327,6 +348,9 @@
         ],
         "StatusCode": 400
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
@@ -349,6 +373,9 @@
         "MediaTypes": [],
         "StatusCode": 200
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
@@ -378,6 +405,25 @@
         ],
         "StatusCode": 400
       }
+    ],
+    "Tags": [
+      "Identity"
     ]
+  },
+  {
+    "ContainingType": "BookStoreAPI.Controllers.IdentityController",
+    "Method": "UpdateUserDetails",
+    "RelativePath": "api/identity/user",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookStore.Application.Users.UpdateUserDetails.UpdateUserDetailsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
