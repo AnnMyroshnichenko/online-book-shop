@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BookStore.Application.Books.Dtos;
-using BookStore.Application.Books.Querries.GetRestaurants;
+using BookStore.Application.Books.Querries.GetBooks;
 using BookStore.Domain.Repositories;
 using MediatR;
 using Microsoft.Extensions.Logging;

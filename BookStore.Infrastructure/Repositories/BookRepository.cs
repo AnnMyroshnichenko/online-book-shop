@@ -23,6 +23,7 @@ namespace BookStore.Infrastructure.Repositories
         {
             var searchPhraseToLower = searchPhrase?.ToLower();
             var books = await dbContext.Books
+                .Include(b => b.Categories)
                 .Where(x => searchPhraseToLower == null || (x.Title.ToLower().Contains(searchPhraseToLower)))
                 .ToListAsync();
             return books;

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookStore.Application.Books.Querries.GetRestaurants
+namespace BookStore.Application.Books.Querries.GetBooks
 {
     public class GetAllBooksQuery : IRequest<IEnumerable<BookDto>>
     {

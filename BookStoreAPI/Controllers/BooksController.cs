@@ -3,7 +3,7 @@ using BookStore.Application.Books.Commands.CreateBook;
 using BookStore.Application.Books.Commands.DeleteBook;
 using BookStore.Application.Books.Commands.UpdateBook;
 using BookStore.Application.Books.Querries.GetBookById;
-using BookStore.Application.Books.Querries.GetRestaurants;
+using BookStore.Application.Books.Querries.GetBooks;
 using BookStore.Domain.Constants;
 using BookStore.Domain.Entities;
 using MediatR;
