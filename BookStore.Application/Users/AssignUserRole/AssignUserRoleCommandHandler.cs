@@ -14,9 +14,9 @@ namespace BookStore.Application.Users.AssignUserRole
     public class AssignUserRoleCommandHandler
         (ILogger<AssignUserRoleCommandHandler> logger,
         UserManager<User> userManager,
-        RoleManager<IdentityRole> roleManager) : IRequestHandler<UnassignUserRoleCommand>
+        RoleManager<IdentityRole> roleManager) : IRequestHandler<AssignUserRoleCommand>
     {
-        public async Task Handle(UnassignUserRoleCommand request, CancellationToken cancellationToken)
+        public async Task Handle(AssignUserRoleCommand request, CancellationToken cancellationToken)
         {
             logger.LogInformation("Assigning user role: {@Request}", request);
             var user = await userManager.FindByEmailAsync(request.UserEmail)

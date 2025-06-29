@@ -10,7 +10,6 @@ namespace BookStore.Application.Books.Querries.GetRestaurants
 {
     public class GetAllBooksQuery : IRequest<IEnumerable<BookDto>>
     {
-
-
+        public string? SearchPhrase { get; set; }
     }
 }

@@ -6,7 +6,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "SearchPhrase",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -421,6 +427,38 @@
       {
         "Name": "command",
         "Type": "BookStore.Application.Users.UpdateUserDetails.UpdateUserDetailsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookStoreAPI.Controllers.IdentityController",
+    "Method": "AssignUserRole",
+    "RelativePath": "api/identity/userRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookStore.Application.Users.AssignUserRole.AssignUserRoleCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookStoreAPI.Controllers.IdentityController",
+    "Method": "UnassignUserRole",
+    "RelativePath": "api/identity/userRole",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookStore.Application.Users.UnassignUserRole.UnassignUserRoleCommand",
         "IsRequired": true
       }
     ],

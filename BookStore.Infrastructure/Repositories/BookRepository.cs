@@ -19,6 +19,15 @@ namespace BookStore.Infrastructure.Repositories
             return books;
         }
 
+        public async Task<IEnumerable<Book>> GetAllByNameAsync(string? searchPhrase)
+        {
+            var searchPhraseToLower = searchPhrase?.ToLower();
+            var books = await dbContext.Books
+                .Where(x => searchPhraseToLower == null || (x.Title.ToLower().Contains(searchPhraseToLower)))
+                .ToListAsync();
+            return books;
+        }
+
         public async Task<Book?> GetByIdAsync(int id)
         {
            var book = await dbContext.Books.FirstOrDefaultAsync(x => x.Id == id);

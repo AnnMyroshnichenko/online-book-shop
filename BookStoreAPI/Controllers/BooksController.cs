@@ -17,9 +17,9 @@ namespace BookStoreAPI.Controllers
     public class BooksController(IMediator mediator) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] GetAllBooksQuery query)
         {
-            var books = await mediator.Send(new GetAllBooksQuery());
+            var books = await mediator.Send(query);
             return Ok(books);
         }
 

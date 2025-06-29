@@ -19,7 +19,7 @@ namespace BookStore.Application.Books.Querries.GetBooks
         public async Task<IEnumerable<BookDto>> Handle(GetAllBooksQuery request, CancellationToken cancellationToken)
         {
             logger.LogInformation("Getting all books");
-            var books = await bookRepository.GetAllAsync();
+            var books = await bookRepository.GetAllByNameAsync(request.SearchPhrase);
             var booksDtos = mapper.Map<IEnumerable<BookDto>>(books);
             return booksDtos!;
         }
