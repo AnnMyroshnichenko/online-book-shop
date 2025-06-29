@@ -19,14 +19,22 @@ namespace BookStore.Infrastructure.Repositories
             return books;
         }
 
-        public async Task<IEnumerable<Book>> GetAllByNameAsync(string? searchPhrase)
+        public async Task<(IEnumerable<Book>, int)> GetAllByNameAsync(string? searchPhrase, int pageNumber, int pageSize)
         {
             var searchPhraseToLower = searchPhrase?.ToLower();
-            var books = await dbContext.Books
+
+            var baseQuery = dbContext.Books
                 .Include(b => b.Categories)
-                .Where(x => searchPhraseToLower == null || (x.Title.ToLower().Contains(searchPhraseToLower)))
+                .Where(x => searchPhraseToLower == null 
+                    || (x.Title.ToLower().Contains(searchPhraseToLower)));
+
+            var totalCount = await baseQuery.CountAsync();
+
+            var books = await baseQuery
+                .Skip(pageSize * (pageNumber - 1))
+                .Take(pageSize)
                 .ToListAsync();
-            return books;
+            return (books, totalCount);
         }
 
         public async Task<Book?> GetByIdAsync(int id)

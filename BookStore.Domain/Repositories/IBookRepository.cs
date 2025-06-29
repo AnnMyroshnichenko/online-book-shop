@@ -14,6 +14,6 @@ namespace BookStore.Domain.Repositories
         Task<int> Create(Book book);
         Task Delete(Book book);
         Task SaveChanges();
-        Task<IEnumerable<Book>> GetAllByNameAsync(string? searchPhrase);
+        Task<(IEnumerable<Book>, int)> GetAllByNameAsync(string? searchPhrase, int pageNumber, int pageSize);
     }
 }

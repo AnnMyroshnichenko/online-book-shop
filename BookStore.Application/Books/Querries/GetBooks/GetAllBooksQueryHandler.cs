@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BookStore.Application.Books.Dtos;
 using BookStore.Application.Books.Querries.GetBooks;
+using BookStore.Application.Common;
 using BookStore.Domain.Repositories;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -14,14 +15,18 @@ namespace BookStore.Application.Books.Querries.GetBooks
 {
     public class GetAllBooksQueryHandler (ILogger<GetAllBooksQueryHandler> logger,
         IMapper mapper, IBookRepository bookRepository)
-        : IRequestHandler<GetAllBooksQuery, IEnumerable<BookDto>>
+        : IRequestHandler<GetAllBooksQuery, PageResult<BookDto>>
     {
-        public async Task<IEnumerable<BookDto>> Handle(GetAllBooksQuery request, CancellationToken cancellationToken)
+        public async Task<PageResult<BookDto>> Handle(GetAllBooksQuery request, CancellationToken cancellationToken)
         {
             logger.LogInformation("Getting all books");
-            var books = await bookRepository.GetAllByNameAsync(request.SearchPhrase);
+            
+            var (books, totalCount) = await bookRepository.GetAllByNameAsync(request.SearchPhrase,
+                request.PageNumber,
+                request.PageSize);
             var booksDtos = mapper.Map<IEnumerable<BookDto>>(books);
-            return booksDtos!;
+            var result = new PageResult<BookDto>(booksDtos, totalCount, request.PageSize, request.PageNumber);
+            return result;
         }
     }
 }
