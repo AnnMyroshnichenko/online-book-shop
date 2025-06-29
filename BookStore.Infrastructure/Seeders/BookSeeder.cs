@@ -36,8 +36,14 @@ namespace BookStore.Infrastructure.Seeders
         {
             List<IdentityRole> roles =
                 [
-                    new (UserRoles.User),
+                    new (UserRoles.User)
+                    {
+                        NormalizedName = UserRoles.User.ToUpper()
+                    },
                     new (UserRoles.Admin)
+                    {
+                        NormalizedName = UserRoles.Admin.ToUpper()
+                    }
                 ];
             return roles;
         }

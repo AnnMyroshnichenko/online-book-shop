@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{720BF6EE-90F6-4E62-94DE-7BD2987751B5}|BookStore.Infrastructure\\BookStore.Infrastructure.csproj|c:\\users\\admin\\desktop\\bookstoreapi\\bookstore.infrastructure\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{720BF6EE-90F6-4E62-94DE-7BD2987751B5}|BookStore.Infrastructure\\BookStore.Infrastructure.csproj|solutionrelative:bookstore.infrastructure\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{42B7BFAB-E58A-46FB-A5AC-BE3B13C61105}|BookStoreAPI\\BookStoreAPI.csproj|c:\\users\\admin\\desktop\\bookstoreapi\\bookstoreapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42B7BFAB-E58A-46FB-A5AC-BE3B13C61105}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -69,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{42B7BFAB-E58A-46FB-A5AC-BE3B13C61105}|BookStoreAPI\\BookStoreAPI.csproj|c:\\users\\admin\\desktop\\bookstoreapi\\bookstoreapi\\extensions\\webapplicationbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42B7BFAB-E58A-46FB-A5AC-BE3B13C61105}|BookStoreAPI\\BookStoreAPI.csproj|solutionrelative:bookstoreapi\\extensions\\webapplicationbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{720BF6EE-90F6-4E62-94DE-7BD2987751B5}|BookStore.Infrastructure\\BookStore.Infrastructure.csproj|c:\\users\\admin\\desktop\\bookstoreapi\\bookstore.infrastructure\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{720BF6EE-90F6-4E62-94DE-7BD2987751B5}|BookStore.Infrastructure\\BookStore.Infrastructure.csproj|solutionrelative:bookstore.infrastructure\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{720BF6EE-90F6-4E62-94DE-7BD2987751B5}|BookStore.Infrastructure\\BookStore.Infrastructure.csproj|c:\\users\\admin\\desktop\\bookstoreapi\\bookstore.infrastructure\\bookstore.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -191,37 +191,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Seeders\\BookSeeder.cs",
-              "RelativeDocumentMoniker": "BookStore.Infrastructure\\Seeders\\BookSeeder.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Seeders\\BookSeeder.cs",
-              "RelativeToolTip": "BookStore.Infrastructure\\Seeders\\BookSeeder.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T09:47:17.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookStore-API-20250628.log",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Logs\\BookStore-API-20250628.log",
-              "RelativeDocumentMoniker": "BookStoreAPI\\Logs\\BookStore-API-20250628.log",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Logs\\BookStore-API-20250628.log",
-              "RelativeToolTip": "BookStoreAPI\\Logs\\BookStore-API-20250628.log",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-28T08:13:55.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "BooksController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "BookStoreAPI\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Controllers\\BooksController.cs*",
-              "RelativeToolTip": "BookStoreAPI\\Controllers\\BooksController.cs*",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookStoreAPI\\Controllers\\BooksController.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAAADgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T08:33:29.639Z",
@@ -229,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserRoles.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Domain\\Constants\\UserRoles.cs",
               "RelativeDocumentMoniker": "BookStore.Domain\\Constants\\UserRoles.cs",
@@ -242,7 +216,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ServiceCollectionExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeDocumentMoniker": "BookStore.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeToolTip": "BookStore.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T11:07:26.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookStore-API-20250628.log",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Logs\\BookStore-API-20250628.log",
+              "RelativeDocumentMoniker": "BookStoreAPI\\Logs\\BookStore-API-20250628.log",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Logs\\BookStore-API-20250628.log",
+              "RelativeToolTip": "BookStoreAPI\\Logs\\BookStore-API-20250628.log",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-28T08:13:55.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Seeders\\BookSeeder.cs",
+              "RelativeDocumentMoniker": "BookStore.Infrastructure\\Seeders\\BookSeeder.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Seeders\\BookSeeder.cs",
+              "RelativeToolTip": "BookStore.Infrastructure\\Seeders\\BookSeeder.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T09:47:17.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "20250628081651_NullAllowedForAddressFields.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Migrations\\20250628081651_NullAllowedForAddressFields.cs",
               "RelativeDocumentMoniker": "BookStore.Infrastructure\\Migrations\\20250628081651_NullAllowedForAddressFields.cs",
@@ -255,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IdentityController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Controllers\\IdentityController.cs",
               "RelativeDocumentMoniker": "BookStoreAPI\\Controllers\\IdentityController.cs",
@@ -267,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Program.cs",
               "RelativeDocumentMoniker": "BookStoreAPI\\Program.cs",
@@ -280,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UpdateUserDetailsCommand.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Application\\Users\\UpdateUserDetails\\UpdateUserDetailsCommand.cs",
               "RelativeDocumentMoniker": "BookStore.Application\\Users\\UpdateUserDetails\\UpdateUserDetailsCommand.cs",
@@ -292,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UpdateUserDetailsCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Application\\Users\\UpdateUserDetails\\UpdateUserDetailsCommandHandler.cs",
               "RelativeDocumentMoniker": "BookStore.Application\\Users\\UpdateUserDetails\\UpdateUserDetailsCommandHandler.cs",
@@ -304,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "BookStore.Domain\\Entities\\User.cs",
@@ -317,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CurrentUser.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Application\\Users\\CurrentUser.cs",
               "RelativeDocumentMoniker": "BookStore.Application\\Users\\CurrentUser.cs",
@@ -329,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UserContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Application\\Users\\UserContext.cs",
               "RelativeDocumentMoniker": "BookStore.Application\\Users\\UserContext.cs",
@@ -341,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "BookStore.Application\\Extensions\\ServiceCollectionExtensions.cs",
@@ -365,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BookStore.Application.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Application\\BookStore.Application.csproj",
               "RelativeDocumentMoniker": "BookStore.Application\\BookStore.Application.csproj",
@@ -377,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CreateBookCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Application\\Books\\Commands\\CreateBook\\CreateBookCommandHandler.cs",
               "RelativeDocumentMoniker": "BookStore.Application\\Books\\Commands\\CreateBook\\CreateBookCommandHandler.cs",
@@ -389,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "CreateBookCommand.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Application\\Books\\Commands\\CreateBook\\CreateBookCommand.cs",
               "RelativeDocumentMoniker": "BookStore.Application\\Books\\Commands\\CreateBook\\CreateBookCommand.cs",
@@ -401,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "WebApplicationBuilderExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStoreAPI\\Extensions\\WebApplicationBuilderExtensions.cs",
               "RelativeDocumentMoniker": "BookStoreAPI\\Extensions\\WebApplicationBuilderExtensions.cs",
@@ -422,18 +435,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T11:35:14.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ServiceCollectionExtension.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
-              "RelativeDocumentMoniker": "BookStore.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\BookStoreAPI\\BookStore.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
-              "RelativeToolTip": "BookStore.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowBkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T11:07:26.405Z"
             },
             {
               "$type": "Document",
