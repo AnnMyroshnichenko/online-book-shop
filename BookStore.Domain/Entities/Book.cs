@@ -17,6 +17,7 @@ namespace BookStore.Domain.Entities
         public DateTime? PublishedDate { get; set; }
         public string? CoverImageUrl { get; set; }
         public bool IsAvailableForSale { get; set; }
+        public decimal Price { get; set; }
 
         public ICollection<Category> Categories { get; set; } = new List<Category>();
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();

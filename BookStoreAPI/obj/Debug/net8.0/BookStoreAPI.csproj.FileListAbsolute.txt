@@ -175,3 +175,4 @@ C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\obj\Debug\net8.0\refint\BookSto
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\obj\Debug\net8.0\BookStoreAPI.pdb
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\obj\Debug\net8.0\BookStoreAPI.genruntimeconfig.cache
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\obj\Debug\net8.0\ref\BookStoreAPI.dll
+C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\FluentValidation.dll

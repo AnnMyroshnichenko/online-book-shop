@@ -100,6 +100,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Houghton Mifflin Harcourt",
                     PublishedDate = new DateTime(1937, 9, 21),
                     IsAvailableForSale = true,
+                    Price = 5.99m,
                     Categories = new List<Category> { GetCategory("Fantasy"), GetCategory("Adventure") }
                 },
                 new Book
@@ -111,6 +112,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "J.B. Lippincott & Co.",
                     PublishedDate = new DateTime(1960, 7, 11),
                     IsAvailableForSale = true,
+                    Price = 7.00m,
                     Categories = new List<Category> { GetCategory("Classic") }
                 },
                 new Book
@@ -122,6 +124,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Secker & Warburg",
                     PublishedDate = new DateTime(1949, 6, 8),
                     IsAvailableForSale = true,
+                    Price = 12.99m,
                     Categories = new List<Category> { GetCategory("Dystopian"), GetCategory("Science Fiction") }
                 },
 
@@ -134,6 +137,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Little, Brown and Company",
                     PublishedDate = new DateTime(1951, 7, 16),
                     IsAvailableForSale = true,
+                    Price = 1.99m,
                     Categories = new List<Category> { GetCategory("Classic") }
                 },
                 new Book
@@ -145,6 +149,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Lackington, Hughes, Harding, Mavor & Jones",
                     PublishedDate = new DateTime(1818, 1, 1),
                     IsAvailableForSale = true,
+                    Price = 5.99m,
                     Categories = new List<Category> { GetCategory("Horror"), GetCategory("Classic") }
                 },
                 new Book
@@ -156,6 +161,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "T. Egerton",
                     PublishedDate = new DateTime(1813, 1, 28),
                     IsAvailableForSale = true,
+                    Price = 8.99m,
                     Categories = new List<Category> { GetCategory("Romance"), GetCategory("Classic") }
                 },
                 new Book
@@ -167,6 +173,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Reynal & Hitchcock",
                     PublishedDate = new DateTime(1943, 4, 6),
                     IsAvailableForSale = true,
+                    Price = 11.99m,
                     Categories = new List<Category> { GetCategory("Philosophy"), GetCategory("Children's") }
                 },
 
@@ -179,6 +186,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Doubleday",
                     PublishedDate = new DateTime(2003, 3, 18),
                     IsAvailableForSale = true,
+                    Price = 4.99m,
                     Categories = new List<Category> { GetCategory("Thriller") }
                 },
                 new Book
@@ -190,6 +198,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Simon & Schuster",
                     PublishedDate = new DateTime(2011, 10, 24),
                     IsAvailableForSale = true,
+                    Price = 2.50m,
                     Categories = new List<Category> { GetCategory("Biography") }
                 },
                 new Book
@@ -201,6 +210,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Harvill Secker",
                     PublishedDate = new DateTime(2011, 9, 4),
                     IsAvailableForSale = true,
+                    Price = 3.99m,
                     Categories = new List<Category> { GetCategory("Philosophy"), GetCategory("Historical") }
                 },
                 new Book
@@ -212,6 +222,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Doubleday",
                     PublishedDate = new DateTime(1977, 1, 28),
                     IsAvailableForSale = true,
+                    Price = 10.50m,
                     Categories = new List<Category> { GetCategory("Horror") }
                 },
                 new Book
@@ -223,6 +234,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Tor Books",
                     PublishedDate = new DateTime(1985, 1, 15),
                     IsAvailableForSale = true,
+                    Price = 3.99m,
                     Categories = new List<Category> { GetCategory("Science Fiction") }
                 },
                 new Book
@@ -234,6 +246,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Knopf Books for Young Readers",
                     PublishedDate = new DateTime(2005, 3, 14),
                     IsAvailableForSale = true,
+                    Price = 14.50m,
                     Categories = new List<Category> { GetCategory("Historical"), GetCategory("Classic") }
                 },
                 new Book
@@ -245,6 +258,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Harper & Brothers",
                     PublishedDate = new DateTime(1952, 10, 15),
                     IsAvailableForSale = true,
+                    Price = 13.50m,
                     Categories = new List<Category> { GetCategory("Children's"), GetCategory("Classic") }
                 },
                 new Book
@@ -256,6 +270,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "HarperOne",
                     PublishedDate = new DateTime(1988, 4, 15),
                     IsAvailableForSale = true,
+                    Price = 14.99m,
                     Categories = new List<Category> { GetCategory("Philosophy"), GetCategory("Adventure") }
                 },
 
@@ -268,6 +283,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Smith, Elder & Co.",
                     PublishedDate = new DateTime(1847, 10, 16),
                     IsAvailableForSale = true,
+                    Price = 8.99m,
                     Categories = new List<Category> { GetCategory("Classic"), GetCategory("Romance") }
                 },
                 new Book
@@ -279,6 +295,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Harper & Brothers",
                     PublishedDate = new DateTime(1851, 11, 14),
                     IsAvailableForSale = true,
+                    Price = 4.99m,
                     Categories = new List<Category> { GetCategory("Classic"), GetCategory("Adventure") }
                 },
                 new Book
@@ -290,6 +307,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Norstedts Förlag",
                     PublishedDate = new DateTime(2005, 8, 27),
                     IsAvailableForSale = true,
+                    Price = 13.50m,
                     Categories = new List<Category> { GetCategory("Thriller") }
                 },
                 new Book
@@ -301,6 +319,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Archibald Constable and Company",
                     PublishedDate = new DateTime(1897, 5, 26),
                     IsAvailableForSale = true,
+                    Price = 5.99m,
                     Categories = new List<Category> { GetCategory("Horror"), GetCategory("Classic") }
                 },
                 new Book
@@ -312,6 +331,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "L.C. Page & Co.",
                     PublishedDate = new DateTime(1908, 6, 20),
                     IsAvailableForSale = true,
+                    Price = 10.99m,
                     Categories = new List<Category> { GetCategory("Children's"), GetCategory("Classic") }
                 },
                 new Book
@@ -323,6 +343,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "William Heinemann",
                     PublishedDate = new DateTime(1898, 4, 1),
                     IsAvailableForSale = true,
+                    Price = 13.99m,
                     Categories = new List<Category> { GetCategory("Science Fiction"), GetCategory("Classic") }
                 },
                 new Book
@@ -334,6 +355,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "A. Lacroix, Verboeckhoven & Cie.",
                     PublishedDate = new DateTime(1862, 4, 3),
                     IsAvailableForSale = true,
+                    Price = 8.99m,
                     Categories = new List<Category> { GetCategory("Historical"), GetCategory("Classic") }
                 },
                 new Book
@@ -345,6 +367,7 @@ namespace BookStore.Infrastructure.Seeders
                     Publisher = "Dutton Books",
                     PublishedDate = new DateTime(2012, 1, 10),
                     IsAvailableForSale = true,
+                    Price = 9.99m,
                     Categories = new List<Category> { GetCategory("Romance") }
                 }
             };
