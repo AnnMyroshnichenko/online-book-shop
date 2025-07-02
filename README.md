@@ -2,7 +2,8 @@
 The Online Book Shop API is a robust, scalable RESTful API built with ASP.NET Core. It is designed to manage a bookstore’s inventory and operations. 
 It provides functionality for creating, updating, retrieving, and deleting books, with support for categorizing books into multiple genres. The project adheres to 
 Clean Architecture principles and implements the Command Query Responsibility Segregation (CQRS) pattern using MediatR. The application implements role-based authorization 
-using ASP.NET Core Identity with roles like Admin and User to control access.
+using ASP.NET Core Identity with roles like Admin and User to control access. It also includes comprehensive unit tests to ensure the correctness and reliability of the core application logic. 
+Tests are written using xUnit and Moq for mocking dependencies. 
 
 ## Technologies & Tools
 - ASP.NET Core Web API
@@ -11,6 +12,7 @@ using ASP.NET Core Identity with roles like Admin and User to control access.
 - MediatR for CQRS pattern 
 - AutoMapper for mapping between DTOs/Entities
 - Serilog for logging
+- xUnit and Moq for unit testing
 
 ## Architecture Overview
 
