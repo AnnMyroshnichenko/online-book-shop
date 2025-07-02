@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BookStore.Application.Books.Commands.CreateBook;
 using BookStore.Application.Books.Commands.UpdateBook;
+using BookStore.Application.Categories.Dtos;
 using BookStore.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,12 @@ namespace BookStore.Application.Books.Dtos
        
             CreateMap<UpdateBookCommand, Book>()
                 .ForMember(c => c.Categories, opt => opt.MapFrom(src => src.Categories));
+
+            CreateMap<CategoryDto, Category>()
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name));
+
+            CreateMap<Category, CategoryDto>()
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name));
         }
     }
 }
