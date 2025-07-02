@@ -176,3 +176,5 @@ C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\obj\Debug\net8.0\BookStoreAPI.p
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\obj\Debug\net8.0\BookStoreAPI.genruntimeconfig.cache
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\obj\Debug\net8.0\ref\BookStoreAPI.dll
 C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Admin\Desktop\BookStoreAPI\BookStoreAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

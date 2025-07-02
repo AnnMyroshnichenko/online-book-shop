@@ -1,6 +1,8 @@
 ﻿using BookStore.Application.Books;
 using BookStore.Application.Users;
 using BookStore.Domain.Repositories;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -19,7 +21,8 @@ namespace BookStore.Application.Extensions
 
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(applicationAssembly));
             services.AddAutoMapper(applicationAssembly);
-
+            services.AddValidatorsFromAssembly(applicationAssembly)
+                .AddFluentValidationAutoValidation();
             services.AddScoped<IUserContext, UserContext>();
             services.AddHttpContextAccessor();
         }
