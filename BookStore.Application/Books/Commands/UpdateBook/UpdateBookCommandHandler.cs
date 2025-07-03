@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Application.Books.Commands.UpdateBook
 {
-    internal class UpdateBookCommandHandler (ILogger<UpdateBookCommandHandler> logger,
+    public class UpdateBookCommandHandler (ILogger<UpdateBookCommandHandler> logger,
         IBookRepository bookRepository, IMapper mapper)
         : IRequestHandler<UpdateBookCommand>
     {
